@@ -10,13 +10,13 @@ This project aims to predict the survival of passengers on the Titanic using log
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/Titanic-Survival-Prediction.git
+git clone https://github.com/CodeRreaper69/CODSOFT_DATA_SCIENCE
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd Titanic-Survival-Prediction
+cd CODSOFT_DATA_SCIENCE
 ```
 
 3. Install the required dependencies:
