@@ -7,9 +7,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from sklearn.preprocessing import LabelEncoder
+import time
 
 #creating excel reading object
-df = pd.read_csv("D:/machine_learning/CS_1/Titanic-Dataset.csv") #dataset location
+df = pd.read_csv("Titanic-Dataset.csv") #dataset location
 #print(df["Age"].max())
 #function for data insights
 def data_insights(df):
@@ -39,24 +40,53 @@ def data_insights(df):
 
     print("columns are -")
     print(df.columns)
+    
+    
+    
+    
 #for data visualization
-def data_vis(df,field1,field2):
+def data_vis(df,field1,field2,field3,field4):
     #creating excel reading object
     #df = pd.read_csv(df)#dataset from kaggle
     print(df[field1].value_counts())
     print(df[field2].value_counts())
-    sns.countplot(x=field1, hue=field2, data=df)
-    plt.show() 
+    #sns.countplot(x=field1, hue=field2, data=df)
+    fig, axes = plt.subplots(1,2)
 
-#data_insights(df)
+    # Plotting first subplot
+    axes[0].set_title(f"{field1} vs {field2}")
+    sns.countplot(x=field1, hue=field2, data=df, ax=axes[0])
+    
+    # Plotting second subplot
+    axes[1].set_title(f"{field3} vs {field4}")
+    sns.countplot(x=field3, hue=field4, data=df, ax=axes[1])
+    
+    # enabling the plot
+    plt.tight_layout()  # Adjust layout to prevent overlapping
+    plt.show()
+    plt.close()
+
+
+print("Data insights before dropping null values")
+data_insights(df)
 #data_vis(df,'Survived','Pclass')
+print("\n \n")
 
 #dropping null values
 df = df.dropna(subset=['Age', 'Sex', 'Survived'])
+print("Data insights after dropping null values")
 
-#print(df.info())
-#data_insights(df)
-#data_vis(df,'Survived','Sex')
+
+
+
+print(df.info())
+data_insights(df)
+data_vis(df,'Survived','Sex','Survived','Pclass')
+#time.sleep(5)
+#plt.close()
+#data_vis(df,'Survived','Pclass')
+#time.sleep(5)
+#plt.close()
 
 
 
@@ -100,7 +130,7 @@ accuracy = accuracy_score(y_test, y_pred)
 conf_matrix = confusion_matrix(y_test, y_pred)
 class_report = classification_report(y_test, y_pred)
 
-print(f'Accuracy: {accuracy}')
+print(f'Accuracy: {accuracy*100}%')
 print(f'Confusion Matrix:\n{conf_matrix}')
 print(f'Classification Report:\n{class_report}')
 
@@ -141,20 +171,6 @@ while True:
         break
     else:
         a = True
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
