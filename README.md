@@ -30,6 +30,8 @@ pip install -r requirements.txt
 
 ```bash
 python titanic_prediction.py
+or
+python3 titanic_prediction.py
 ```
 
 2. Follow the prompts to input the age and sex of an individual passenger, and the script will predict whether they would have survived the Titanic disaster.
