@@ -39,7 +39,7 @@ git clone https://github.com/CodeRreaper69/CODSOFT_DATA_SCIENCE
 2. Navigate to the project directory:
 
  ```bash
-cd CODSOFT_DATA_SCIENCE/TASK_1
+cd CODSOFT_DATA_SCIENCE/TASK_2
 ```
 3. Install the required libraries:
 
