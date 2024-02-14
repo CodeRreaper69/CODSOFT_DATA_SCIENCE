@@ -42,7 +42,7 @@ python3 titanic_prediction.py
 - `README.md`: This file, containing information about the project.
 
 ## Acknowledgments
-- Dataset Source: [Kaggle - Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic)
+- Dataset Source: [Kaggle - Titanic_Survival](https://www.kaggle.com/datasets/yasserh/titanic-dataset)
 
 
 
