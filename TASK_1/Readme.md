@@ -16,7 +16,7 @@ git clone https://github.com/CodeRreaper69/CODSOFT_DATA_SCIENCE
 2. Navigate to the project directory:
 
 ```bash
-cd CODSOFT_DATA_SCIENCE
+cd CODSOFT_DATA_SCIENCE/TASK_1
 ```
 
 3. Install the required dependencies:
