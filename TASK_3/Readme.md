@@ -6,11 +6,11 @@ This repository contains a Python script for training a machine learning model t
 
 ## Content
 
-- **File**: `iris_classification.py`
+- **File**: `Iris_flower_classification.py`
   - The main Python script for loading the Iris dataset, exploring insights, visualizing data, training a k-Nearest Neighbors (k-NN) classification model, and making predictions based on user input.
 
 - **Folder**: `TASK_3`
-  - The folder containing the Python script (`iris_classification.py`).
+  - The folder containing the Python script (`Iris_flower_classification.py`).
 
 ## Process
 
@@ -40,7 +40,7 @@ This repository contains a Python script for training a machine learning model t
    - Open a terminal and go to the `TASK_3` folder: `cd CODSOFT_DATA_SCIENCE/TASK_3`.
 
 4. **Run the Script:**
-   - Execute the script: `python iris_classification.py`.
+   - Execute the script: `Iris_flower_classification.p`.
 
 5. **User Input:**
    - Follow the prompts to enter sepal and petal measurements for predictions.
