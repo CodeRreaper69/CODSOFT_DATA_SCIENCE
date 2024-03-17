@@ -15,12 +15,6 @@ I am Sourabh Dey, a second-year undergraduate student pursuing B.Tech in Compute
 3. **TASK_3 - Iris Flower Species Classification**
    - Using the Iris dataset, I developed a machine learning model to classify Iris flowers into different species based on sepal and petal measurements. This project is a classic introductory classification task.
 
-4. **TASK_4 - Sales Prediction Using Machine Learning in Python**
-   - This project involves predicting future sales by leveraging machine learning techniques. It explores data analysis, preprocessing, feature engineering, and modeling to optimize advertising strategies and maximize sales potential.
-
-5. **TASK_5 - Credit Card Fraud Detection**
-   - The goal of this project is to identify fraudulent credit card transactions. It includes preprocessing and normalizing transaction data, handling class imbalance, and training a classification algorithm to classify transactions as fraudulent or genuine.
-
 ## How to Explore
 
 1. **Clone the Repository:**
